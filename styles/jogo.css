@@ -1,0 +1,222 @@
+/* todo
+- Cores de fundo : preto
+- Fonte: Courier New
+- Tamanho da fonte: 15px
+- Cor da fonte: #09FF00 
+
+- Alinhar titulo e subtitulo ao centro
+- alinhar jogadores à esquerda
+- alinhar tabuleiro ao centro
+- alinhar botão reset à direita
+- alinhar rodada ao centro
+*/
+
+/* Path: styles/jogo.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html,
+body {
+    height: auto;
+    margin: auto;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    color: rgb(9, 255, 0);
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: rgb(9, 255, 0);
+    background-color: black;
+}
+
+h2 {
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: rgb(9, 255, 0);
+    background-color: black;
+}
+
+h3 {
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: rgb(9, 255, 0);
+    background-color: black;
+    border: 3px solid rgb(9, 255, 0);
+    width: 10%;
+    height: auto;
+    align-self: center;
+    margin: 0 auto;
+    padding: auto;
+}
+
+#jogadores {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: auto;
+    background-color: black;
+}
+
+.background {
+    background-color: black;
+    height: auto;
+    padding-top: auto;
+}
+
+.display {
+    color: rgb(9, 255, 0);
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.playerX {
+    color: red;
+}
+
+.playerO {
+    color: blue;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.controls button {
+    margin: 0 1em;
+    padding: 0.5em 1em;
+    border: 1px solid rgb(9, 255, 0);
+    background-color: black;
+    color: rgb(9, 255, 0);
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+.restart {
+    background-color: rgb(9, 255, 0);
+}
+
+#reset {
+    background-color: black;
+}
+
+.container{
+    margin: 0 auto;
+    background-color: black;
+
+}
+
+#tabuleiro {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.tile {
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    cursor: pointer;
+}
+
+#c1 {
+    height: 120px;
+    width: 120px;
+    box-sizing: border-box;
+    border-right: 3px solid rgb(9, 255, 0);
+    border-bottom: 3px solid rgb(9, 255, 0);
+}
+
+#c2 {
+    height: 120px;
+    width: 120px;
+    box-sizing: border-box;
+    border-right: 3px solid rgb(9, 255, 0);
+    border-bottom: 3px solid rgb(9, 255, 0);
+}
+
+#c3 {
+    height: 120px;
+    width: 120px;
+    box-sizing: border-box;
+    border-bottom: 3px solid rgb(9, 255, 0);
+}
+
+#c4 {
+    height: 120px;
+    width: 120px;
+    box-sizing: border-box;
+    border-right: 3px solid rgb(9, 255, 0);
+    border-bottom: 3px solid rgb(9, 255, 0);
+}
+
+#c5 {
+    height: 120px;
+    width: 120px;
+    box-sizing: border-box;
+    border-right: 3px solid rgb(9, 255, 0);
+    border-bottom: 3px solid rgb(9, 255, 0);
+}
+
+#c6 {
+    height: 120px;
+    width: 120px;
+    box-sizing: border-box;
+    border-bottom: 3px solid rgb(9, 255, 0);
+}
+
+#c7 {
+    height: 120px;
+    width: 120px;
+    box-sizing: border-box;
+    border-right: 3px solid rgb(9, 255, 0);
+}
+
+#c8 {
+    height: 120px;
+    width: 120px;
+    box-sizing: border-box;
+    border-right: 3px solid rgb(9, 255, 0);
+}
+
+#c9 {
+    height: 120px;
+    width: 120px;
+    box-sizing: border-box;
+}

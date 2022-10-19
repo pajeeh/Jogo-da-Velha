@@ -1,0 +1,47 @@
+<!-- 
+Título: Jogo da Velha 
+Subtítulo: Estilo Deep Web
+
+Campos para preenchimento:
+- Nome do Jogador 1
+- Nome do Jogador 2
+
+Botões:
+- JOGAR (salva os dados preenchidos e direciona para a página do jogo)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/index.css">
+    <title>👾 Jogo da Velha 👾</title>
+    <script type="text/javascript" src="/scripts/jogoParaVelhos.js"></script>
+</head>
+
+<body>
+    <br>
+    <div>
+        <h1>Jogo da Velha</h1>
+        <h2>Estilo Deep Web</h2>
+    </div>
+
+    <div class="content">
+        <form name="playersForm" action="/pages/jogo.html" method="post" onsubmit="return guardaPlayers()">
+            <label for="jogador1"><strong> Jogador 1 </strong></label>
+            <br><br>
+            <input type="text" name="jogador1" id="jogador1" required>
+            <br><br>
+            <label for="jogador2"><strong> Jogador 2 </strong></label>
+            <br><br>
+            <input type="text" name="jogador2" id="jogador2" required>
+            <br><br>
+            <button type="submit" value="save" onclick=""><strong> JOGAR </strong></button>
+        </form>
+    </div>
+</body>
+
+</html>

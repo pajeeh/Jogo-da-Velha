@@ -1,0 +1,76 @@
+<!-- 
+    Exibir o nome dos jogadores
+    Exibir o tabuleiro
+
+    Tabuleiro com tema Matrix, definido em CSS
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/jogo.css">
+    <title>👾Jogo para Idosos👾</title>
+    <script type="text/javascript" src="/scripts/jogoParaVelhos.js"></script>
+</head>
+
+<body>
+    <br>
+    <h1 id="title">Jogo da Velha</h1>
+    <h2 id="subtitle">Estilo Deep Web</h2>
+
+    <br>
+    <h3 id="listaJogadores">JOGADORES</h3>
+    <br>
+    <div id="jogadores">
+        <!-- Exibe o nome dos jogadores -->
+        <Script>
+            document.getElementById("jogadores").innerHTML = "<h2 id='jogadores'; style='color:red;'>" + sessionStorage.getItem("jogador1") + ":X</h2>";
+            document.getElementById("jogadores").innerHTML += "<h2 id='jogadores';>VS</h2>";
+            document.getElementById("jogadores").innerHTML += "<h2 id='jogadores'; style='color:blue;'>" + sessionStorage.getItem("jogador2") + ":〇</h2>";
+        </Script>
+    </div>
+
+    <br>
+
+
+    <div id="jogadorAtual">
+        <!-- mostra o nome do jogador da vez armazenado em jogadorAtual -->
+        <span class="mostraPlayerDaVez"></span>
+
+    </div>
+
+    <section id="rodada" class="display">
+        <!-- 
+        Sei que não ficou tão bom, foi porque eu só reparei no final que precisava mostrar o nome e não o símbolo, daí fiz essa gambiarra no span ksksks,
+        mas se eu tivesse mais tempo teria feito mais bonito, semana foi puxada, muita gente chamando na monitoria de mobile, daí fiquei maluco ksksks
+        abraços professor.
+-->
+        <span class="mostraPlayerDaVez display-player "></span>
+    </section>
+
+
+    <br>
+
+    <section id="tabuleiro" class="container">
+        <div id="c1" class="tile"></div>
+        <div id="c2" class="tile"></div>
+        <div id="c3" class="tile"></div>
+        <div id="c4" class="tile"></div>
+        <div id="c5" class="tile"></div>
+        <div id="c6" class="tile"></div>
+        <div id="c7" class="tile"></div>
+        <div id="c8" class="tile"></div>
+        <div id="c9" class="tile"></div>
+    </section>
+
+    <section class="display announcer hide"></section>
+    <section class="controls">
+        <button id="reset">RESET</button>
+    </section>
+</body>
+
+</html>
